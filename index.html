@@ -16,13 +16,28 @@
     <h1>Meme Generator</h1>
 
     <main>
-        <p>Texto: <input id="text-input" placeholder="Digite o texto do seu meme"></p>
-        <button id="vai">Imprime!</button>
-        <button id="clear">Limpa tudo</button>
-        <br><br>
+        
+        <p>Texto: <input type="text" id="text-input" maxlength="60" placeholder="Digite o texto do seu meme"></p>
+        <input type="file" id="meme-insert">
+        <br> <br>
+
         <section id="meme-image-container">
+            <div id="meme-text"></div>
+            <div id="meme-image"></div>
+        </section>
 
+        <section>
+            <label>Bordas:</label>
+            <button id="fire">Fire</button>
+            <button id="water">Water</button>
+            <button id="earth">Earth</button>
+        </section>
 
+        <section id="side">
+            <img id="meme-1" src="./imgs/meme1.png" alt="Meme" width="150">
+            <img id="meme-2" src="./imgs/meme2.png" alt="Meme" width="150">
+            <img id="meme-3" src="./imgs/meme3.png" alt="Meme" width="150">
+            <img id="meme-4" src="./imgs/meme4.png" alt="Meme" width="150">
         </section>
 
     </main>

@@ -1,29 +1,55 @@
 #meme-image-container{
-border: black solid 1px;
-width: 500px;
-height: 500px;
-background-color: white;
+    width: 500px;
+    height: 500px;
+    background-color: white;
+    display: inline-block;
 }
 
 #text-input {
     display: inline-block;
 }
+
+
 h1 {
     font-family: 'Press Start 2P', cursive;
-}
-
-
-#vai {
-    display: inline-block;
-}
-
-
-#meme-text {
-    font-size: 60px;
-    color: blue;
 }
 
 #text-input {
     border-style: double;
     height: 25px;
+}
+
+#meme-text {
+    text-shadow:black 5px 5px 5px;
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+    z-index: 2;
+    position: absolute;
+    text-align: center;
+}
+
+#meme-image {
+    height: 500px;
+    width: 500px;
+    text-align: center;
+    z-index: 1;
+    position: absolute;
+}
+
+#fire {
+    border: dashed red 3px;
+    background-color: red;
+    color: white;
+}
+
+#water {
+    border:blue double 5px;
+    background-color: blue;
+    color: white;
+}
+
+#earth {
+    border: green groove 6px;
+    background-color: green;
+    color: white;
 }

@@ -44,9 +44,7 @@ const meme3 = document.querySelector('#meme-3');
 const meme4 = document.querySelector('#meme-4');
 
 function chooseMeme(event) {
-  image.appendChild(event.target);
-  event.target.style.height = '500px';
-  event.target.style.width = '500px';
+  image.setAttribute('src', event.target.src);
 }
 meme1.addEventListener('click', chooseMeme);
 meme2.addEventListener('click', chooseMeme);

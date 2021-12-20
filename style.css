@@ -21,7 +21,7 @@ h1 {
   font-size: 30px;
   color: white;
   z-index: 2;
-  position: absolute;
+  position: relative;
   text-align: center;
 }
 

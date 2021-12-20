@@ -3,7 +3,6 @@ const input = document.querySelector('#text-input');
 const div = document.querySelector('#meme-text');
 const memeInsert = document.querySelector('#meme-insert');
 const image = document.querySelector('#meme-image');
-// pixel.style.border = 'black solid 1px';
 
 function createText(e) {
   div.appendChild(document.createTextNode(e.key));
@@ -44,28 +43,12 @@ const meme2 = document.querySelector('#meme-2');
 const meme3 = document.querySelector('#meme-3');
 const meme4 = document.querySelector('#meme-4');
 
-function chooseMeme1() {
-  image.src = './imgs/meme1.png';
+function chooseMeme(event) {
+  image.appendChild(event.target);
+  event.target.style.height = '500px';
+  event.target.style.width = '500px';
 }
-meme1.addEventListener('click', chooseMeme1);
-
-function chooseMeme2() {
-  meme2.style.width = '500px';
-  meme2.style.height = '500px';
-  image.appendChild(meme2);
-}
-meme2.addEventListener('click', chooseMeme2);
-
-function chooseMeme3() {
-  meme3.style.width = '500px';
-  meme3.style.height = '500px';
-  image.appendChild(meme3);
-}
-meme3.addEventListener('click', chooseMeme3);
-
-function chooseMeme4() {
-  meme4.style.width = '500px';
-  meme4.style.height = '500px';
-  image.appendChild(meme4);
-}
-meme4.addEventListener('click', chooseMeme4);
+meme1.addEventListener('click', chooseMeme);
+meme2.addEventListener('click', chooseMeme);
+meme3.addEventListener('click', chooseMeme);
+meme4.addEventListener('click', chooseMeme);

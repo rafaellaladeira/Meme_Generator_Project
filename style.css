@@ -1,55 +1,52 @@
-#meme-image-container{
-    width: 500px;
-    height: 500px;
-    background-color: white;
-    display: inline-block;
+#meme-image-container {
+  width: 500px;
+  height: 500px;
+  background-color: white;
+  display: inline-block;
+  border: solid black 1px;
 }
-
-#text-input {
-    display: inline-block;
-}
-
 
 h1 {
-    font-family: 'Press Start 2P', cursive;
+  font-family: 'Press Start 2P', cursive;
 }
 
 #text-input {
-    border-style: double;
-    height: 25px;
+  border-style: double;
+  height: 25px;
+  display: inline-block;
 }
 
 #meme-text {
-    text-shadow:black 5px 5px 5px;
-    font-size: 30px;
-    color: rgb(255, 255, 255);
-    z-index: 2;
-    position: absolute;
-    text-align: center;
+  text-shadow: black 5px 5px 5px;
+  font-size: 30px;
+  color: white;
+  z-index: 2;
+  position: absolute;
+  text-align: center;
 }
 
 #meme-image {
-    height: 500px;
-    width: 500px;
-    text-align: center;
-    z-index: 1;
-    position: absolute;
+  height: 500px;
+  width: 500px;
+  text-align: center;
+  z-index: 1;
+  position: absolute;
 }
 
 #fire {
-    border: dashed red 3px;
-    background-color: red;
-    color: white;
+  border: dashed red 3px;
+  background-color: red;
+  color: white;
 }
 
 #water {
-    border:blue double 5px;
-    background-color: blue;
-    color: white;
+  border: blue double 5px;
+  background-color: blue;
+  color: white;
 }
 
 #earth {
-    border: green groove 6px;
-    background-color: green;
-    color: white;
+  border: green groove 6px;
+  background-color: green;
+  color: white;
 }

@@ -1,9 +1,9 @@
 const pixel = document.querySelector('#meme-image-container');
-let input = document.querySelector('#text-input');
+const input = document.querySelector('#text-input');
 const div = document.querySelector('#meme-text');
 const memeInsert = document.querySelector('#meme-insert');
 const image = document.querySelector('#meme-image');
-pixel.style.border = 'black solid 1px';
+// pixel.style.border = 'black solid 1px';
 
 function createText(e) {
   div.appendChild(document.createTextNode(e.key));
